@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+		<div id="div1" class="parallax-window" data-parallax="scroll" data-image-src="{% static 'images/thomas-kelley-128626-unsplash.jpg' %}">
+        <div id="div2"></div>
+
+        <div class="container">
+        	<div class="div4"><h1 id="sem">All Streams</h1></div>
+        	<div class="row">
+
+        		<div class="div3 col-lg-4 col-sm-6"><a href="{% url 'maths' %}"><h1 class="subjects">Mathematics-I</h1></a></div>
+        		<div class="div3 col-lg-4 col-sm-6"><a href="{% url 'chem' %}"><h1 class="subjects">Chemistry</h1></a></div>
+            <div class="div3 col-lg-4 col-sm-6"><a href="{% url 'mechanics' %}"><h1 class="subjects">Mechanics</h1></a></div>
+        		<div class="div3 col-lg-4 col-sm-6"><a href="{% url 'electrical1' %}"><h1 class="subjects">Electrical</h1></a></div>
+        		<div class="div3 col-lg-4 col-sm-6"><a href="{% url 'c' %}"><h1 class="subjects">Computer Science I</h1></a></div>
+        		<div class="div3 col-lg-4 col-sm-6"><a href="{% url 'environment' %}"><h1 class="subjects">Environment</h1></a></div>
+        		<div class="div5 col-lg-4 col-sm-6"><a href="{% url 'physics' %}"><h1 class="subjects">Applied Physics</h1></a></div>
+        		<div class="div5 col-lg-4 col-sm-6"><a href="{% url 'electronics' %}"><h1 class="subjects">Electronics</h1></a></div>
+            <div class="div5 col-lg-4 col-sm-6"><a href="{% url 'ed' %}"><h1 class="subjects">Engineering Drawing</h1></a></div>
+        		<div class="div5 col-lg-4 col-sm-6"><a href="{% url 'c++' %}"><h1 class="subjects">Computer Science II</h1></a></div>
+        		<div class="div5 col-lg-4 col-sm-6"><a href="{% url 'proffComm' %}"><h1 class="subjects">Professional Communication</h1></a></div>
+        		<div class="div5 col-lg-4 col-sm-6"><a href="{% url 'maths2' %}"><h1 class="subjects">Mathematics-II</h1></a></div>
+        		<div class="ed2 col-lg-12"><a href="{% url 'engDesign1' %}"><h1 class="subjects">Engineering Design</h1></a></div>
+          </div>
+          </div>
+        </div>
+{% endblock %}

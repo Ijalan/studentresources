@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div id="div2"></div>
+        <div id="div1" class="parallax-window" data-parallax="scroll" data-image-src="{% static 'images/thomas-kelley-128626-unsplash.jpg' %}">
+        <div class="container">
+        	<div class="div4"><h1 id="sem">STREAMS</h1></div>
+        	<div class="row">
+        		<div class="div3 col-md-4 col-sm-6"><a href="{% url 'CS' %}"><h1 class="subjects">Computer Science</h1></a></div>
+                <div class="div3 col-md-4 col-sm-6"><a href="{% url 'Chemical' %}"><h1 class="subjects">Chemical</h1></a></div>
+        		<div class="div3 col-md-4 col-sm-6"><a href="{% url 'electrical' %}"><h1 class="subjects">Electrical</h1></a></div>
+        		<div class="div3 col-md-4 col-sm-6"><a href="{% url 'civil' %}"><h1 class="subjects">Civil</h1></a></div>
+        		<div class="div3 col-md-4 col-sm-6"><a href="{% url 'Eandcomm' %}"><h1 class="subjects">Electronics and communicatoion</h1></a></div>
+        		<div class="div3 col-md-4 col-sm-6"><a href="{% url 'Mechanical' %}"><h1 class="subjects">Mechanical</h1></a></div>
+                <div class="div3 col-md-4 col-sm-6"><a href="{% url 'Production' %}"><h1 class="subjects">Production</h1></a></div>
+        		<div class="div3 col-md-4 col-sm-6"><a href="{% url 'Biotech' %}"><h1 class="subjects">Bio Technical</h1></a></div>
+        		<div class="div3 col-md-4 col-sm-6"><a href="{% url 'Mechatronics' %}"><h1 class="subjects">Mechatronics</h1></a></div>
+        		<div class="ed3 col-lg-6"><a href="{% url 'Eandcomp' %}"><h1 class="subjects">Electronics and Computer</h1></a></div>
+        		<div class="ed3 col-lg-6"><a href="{%  url 'Eandcomp' %}"><h1 class="subjects">Electronics and Instrumentation</h1></a></div>
+            </div>
+            </div>
+        </div>
+{% endblock %}
